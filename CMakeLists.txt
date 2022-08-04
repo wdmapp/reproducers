@@ -10,12 +10,6 @@ if(NOT DEFINED ROCM_PATH)
   set(ROCM_PATH "/opt/rocm")
 endif()
 
-set(GTENSOR_PER_DIM_KERNELS OFF CACHE BOOL "")
-set(GTENSOR_ENABLE_CLIB OFF CACHE BOOL "")
-set(GTENSOR_ENABLE_BLAS OFF CACHE BOOL "")
-set(GTENSOR_ENABLE_FFT OFF CACHE BOOL "")
-set(GTENSOR_DEVICE "hip" CACHE STRING "")
-
 CPMAddPackage("gh:wdmapp/gtensor#main")
 
 add_executable(gtensor_unravel_reproducer)
