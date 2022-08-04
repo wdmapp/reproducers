@@ -4,7 +4,7 @@
 #include "gtensor/gtensor.h"
 
 int main(int argc, char *argv[]) {
-  auto rhs = gt::empty_device<double>({256, 16, 24, 24, 24, 24});
+  auto rhs = gt::empty_device<double>({32, 16, 24, 24, 24, 24});
   auto k_rhs = rhs.to_kernel();
   // NOTE: with the default option of GTENSOR_PER_DIM_KERNELS=OFF, this will do
   // a 1d kernel launch an "unravel" the 1d value into 6d to pass in to the
