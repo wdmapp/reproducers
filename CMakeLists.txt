@@ -6,7 +6,7 @@ project(gtensor_unravel_reproducer
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 include(cmake/CPM.cmake)
 
-CPMAddPackage("gh:wdmapp/gtensor#main")
+CPMAddPackage("gh:wdmapp/gtensor#8bc09327405e714d867f988dfd16c76466be63b3")
 
 add_executable(gtensor_unravel_reproducer)
 target_gtensor_sources(gtensor_unravel_reproducer
